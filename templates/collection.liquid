@@ -1,3 +1,4 @@
+{% paginate collection.products by 25 %}
 <div class="col-content">
 
   <div class="productlist-wrapper condensed collection collection-{{ collection.handle }}">
@@ -31,7 +32,7 @@
     
     {{ collection.description }}
 
-    {% paginate collection.products by 25 %}
+    
       {% if collection.products.size > 0 %}
     
         <ul class="thumbgrid clearfix">
